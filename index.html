@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>flappyBirdGame</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        canvas{
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
+<canvas id="canvas" width="900" height="600" style="border: 1px solid #000;"></canvas>
 
+<script src="./js/simple-Inheritance.js"></script>
+<script src="./js/Game.js"></script>
+<script src="./js/FrameUtil.js"></script>
+<script>
+    //实例话中介类
+    var game = new Game({
+       fps:60,
+        canvasId:'canvas'
+    });
+
+    //运行游戏
+    game.run();
+</script>
 </body>
 </html>
