@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>flappyBirdGame</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        canvas{
+
+        canvas {
             margin: 0 auto;
             display: block;
         }
@@ -20,15 +21,20 @@
 <script src="./js/simple-Inheritance.js"></script>
 <script src="./js/Game.js"></script>
 <script src="./js/FrameUtil.js"></script>
+<script src="./js/StaticSourceUtil.js"></script>
+<script src="./js/Background.js"></script>
+<script src="./js/underscore-min.js"></script>
+<script src="./js/Pipe.js"></script>
+<script src="./js/Bird.js"></script>
 <script>
     //实例话中介类
     var game = new Game({
-       fps:60,
-        canvasId:'canvas'
+        fps: 60,
+        canvasId: 'canvas'
     });
 
     //运行游戏
-    game.run();
+    //    game.run();
 </script>
 </body>
 </html>

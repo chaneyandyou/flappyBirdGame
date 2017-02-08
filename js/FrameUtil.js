@@ -21,14 +21,13 @@
             //获取当前帧数的时间
             var currentTime = new Date();
             //判断
-            if(currentTime - this.sTime >= 1000){//判断是否达到1s
-                //计算真实帧数
-                this.realFps = this.currentFrame -this.sFrame;
+            if(currentTime - this.sTime >=1000){ //判断是否达到1s
+                //3.1 计算真实帧数
+                this.realFps = this.currentFrame - this.sFrame;
 
-                //更新
+                //3.2 更新
                 this.sTime = currentTime;
                 this.sFrame = this.currentFrame;
-
             }
         }
     })
